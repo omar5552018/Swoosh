@@ -7,13 +7,53 @@
         android:layout_height="match_parent"
         tools:context=".WelcomeActivity">
 
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/welcomescreenbg"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"/>
+    <ImageView
+            android:layout_width="103dp"
+            android:layout_height="38dp" app:srcCompat="@drawable/swooshlogo"
+            android:id="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imageView" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintEnd_toStartOf="@+id/imageView" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"/>
     <TextView
+            android:text="GO ALL IN"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:id="@+id/textView" app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            android:layout_marginTop="44dp" app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:textColor="@color/colorAccent" android:fontFamily="@font/montserrat"
+            android:textSize="56sp" android:textStyle="bold"/>
+    <TextView
+            android:text="ON GOING ALL OUT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:id="@+id/textView2" android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/imageView" app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintEnd_toStartOf="@+id/imageView" android:textColor="@color/colorAccent"
+            android:fontFamily="@font/montserrat"/>
+    <TextView
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            android:layout_width="282dp"
+            android:layout_height="67dp"
+            android:id="@+id/textView3" app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            android:layout_marginTop="116dp" app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:textColor="@color/colorAccent"/>
+    <Button
+            android:text="GET STARTED"
+            android:layout_width="154dp"
+            android:layout_height="61dp"
+            android:id="@+id/button" app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            android:layout_marginBottom="144dp" app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            android:background="@drawable/swoosh_button" android:textColor="@color/colorAccent"
+            android:textSize="16sp" android:fontFamily="@font/alef" android:textStyle="bold"/>
 </android.support.constraint.ConstraintLayout>
